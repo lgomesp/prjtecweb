@@ -3,24 +3,25 @@
     <head>
         <title>Achei minha série!</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|News+Cycle" rel="stylesheet">
+        <meta name="viewport" content="initial-scale=1 maximum-scale=1 user-scalable=no">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     </head>
     <body>
-        <a href="index.html">Voltar</a>
-        <h1>Contato</h1>
+        <a href="index.html" class="btnvoltar">
+            <span class="fa fa-angle-left"></span>
+            Voltar
+        </a>
         <main>
+            <h1>CONTATO</h1>
             <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-                <div class="row">
-                    <label for="name">Nome:</label><br />
-                    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-                </div>
-                <div class="row">
-                    <label for="email">Email:</label><br />
-                    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-                </div>
-                <div class="row">
-                    <label for="message">Mensagem:</label><br />
-                    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-                </div>
+                <label for="name">Nome:</label><br>
+                <input id="name" class="input" name="name" type="text" value="" size="30"/><br>
+                <label for="email">Email:</label><br>
+                <input id="email" class="input" name="email" type="text" value="" size="30" /><br>
+                <label for="message">Mensagem:</label><br>
+                <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br>
                 <input id="submit_button" type="submit" value="Enviar" />
             </form>	
         </main>
