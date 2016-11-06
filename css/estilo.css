@@ -6,21 +6,23 @@
 body {
     background-color: yellow;
     font-family: "News Cycle", "Tahoma", "Verdana";
-    font-size: 1.5em;
-    margin: 4.5em auto;
+    font-size: 136%;
+    margin: 5% auto;
     width: 80%;
     height: auto;
     text-align: center;
 }
 
-h1#nome_site{
+h1#nome_site {
     font-family: "Kaushan Script", "Tahoma", "Verdana";
     font-size: 4em;
 }
 
+
 /*celular*/
+
 @media screen and (max-width: 767px) {
-    body{
+    body {
         margin: 2em;
         font-size: 1em;
     }
@@ -33,7 +35,24 @@ li.btn {
     border: 0.2em solid black;
     list-style: none;
     display: inline-block;
-    transition-duration: 0.5s
+    transition-duration: 0.5s;
+}
+
+li {
+    margin: 0 1.5em 0.5em 0;
+    width: 5em;
+    border: 2px solid black;
+    list-style: none;
+    display: inline-block;
+    transition-duration: 0.5s;
+}
+
+@media screen and (max-width: 767px) {
+    li {
+        width: 70%;
+        margin: 0.5em auto;
+        font-size: 2em;
+    }
 }
 
 li.btn:hover {
@@ -46,21 +65,32 @@ main {
     clear: both;
 }
 
-main p,nav, form {
-    margin-top: 1.8em;
+main p,
+nav,
+form {
+    margin-top: 2%;
 }
 
 a {
     color: #000;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 110%;
 }
 
 footer {
-    margin-top: 3.1em;
+    margin-top: 4%;
 }
 
-.btnvoltar,span{
+.btnvoltar {
+    float: left;
+}
+
+.btnhome {
+    float: right;
+}
+
+.btnvoltar,
+span {
     float: left;
     margin-right: 0.4em;
 }
@@ -70,10 +100,11 @@ span {
 }
 
 form {
-    margin: 0.5em 0 0 0;
+    margin: 0.5% 0 0 0;
 }
 
-form input,textarea {
+form input,
+textarea {
     font-family: "News Cycle", "Tahoma", "Verdana";
     font-size: 0.8em;
     width: 25%;
@@ -82,33 +113,81 @@ form input,textarea {
     border-radius: 1em;
 }
 
+
 /*celular*/
+
 @media screen and (max-width: 767px) {
-    form input,textarea{
+    form input,
+    textarea {
         width: 100%;
     }
 }
 
 form input {
+    margin-bottom: 0.2%;
     text-align: center;
 }
 
-form textarea{
+form textarea {
     padding: 0 0.5em;
     resize: none;
     height: 8em;
 }
 
-textarea:focus, input:focus, select:focus {
+textarea:focus,
+input:focus,
+select:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
-}     
+}
 
 #submit_button {
     cursor: pointer;
 }
 
-::-webkit-scrollbar { width:5px; background: none; }
-::-webkit-scrollbar-track { background: rgba(0,0,0,0); }
-::-webkit-scrollbar-thumb { border-radius:10px; background:#8b8778;  }
+figure img {
+    width: 100%;
+}
 
+figcaption {
+    margin-top: -0.8em;
+    font-size: 65%;
+}
+
+.img-serie {
+    width: 8em;
+    float: left;
+    margin-right: 1em;
+}
+
+.sinopse {
+    font-size: 0.9em;
+    text-align: justify;
+}
+
+iframe {
+    border: 0;
+    margin-top: 0.5em;
+    width: 40%;
+    height: 10em;
+}
+
+@media screen and (max-width: 767px) {
+    iframe {
+        width: 100%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    backound: none;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #8b8778;
+}
